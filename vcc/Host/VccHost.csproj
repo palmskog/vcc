@@ -193,7 +193,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' And '$(OS)' == 'Windows_NT' ">
     <PostBuildEvent>
 if NOT "%VS100COMNTOOLS%"=="" (
   call "%VS100COMNTOOLS%\..\..\VC\vcvarsall.bat" x86
@@ -211,7 +211,7 @@ sn -q -R  $(TargetPath) $(ProjectDir)\..\Common\InterimKey.snk
 sn -q -R  $(ProjectDir)obj\$(ConfigurationName)\$(TargetFileName) $(ProjectDir)\..\Common\InterimKey.snk</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>if NOT "%25VS110COMNTOOLS%25"=="" (
+    <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">if NOT "%25VS110COMNTOOLS%25"=="" (
   call "%25VS110COMNTOOLS%25\..\..\VC\vcvarsall.bat" x86
 ) else (
   if NOT "%25VS100COMNTOOLS%25"=="" (
