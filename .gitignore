@@ -52,3 +52,7 @@ Vcc.sln.docstates
 Vcc.VC.db
 Vcc.VC.VC.opendb
 packages/
+vcc/CodeModel2Vcc/bin/
+vcc/CodeModel2Vcc/obj/
+vcc/Translator/bin/
+vcc/Translator/obj/

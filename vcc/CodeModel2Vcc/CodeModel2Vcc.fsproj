@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>CodeModel2Vcc</RootNamespace>
     <AssemblyName>Microsoft.Research.Vcc.CodeModel</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Name>CodeModel2Vcc</Name>
     <SccProjectName>
@@ -20,8 +20,8 @@
     </SccAuxPath>
     <SccLocalPath>
     </SccLocalPath>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
-    <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
+    <TargetFrameworkProfile />
+    <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
